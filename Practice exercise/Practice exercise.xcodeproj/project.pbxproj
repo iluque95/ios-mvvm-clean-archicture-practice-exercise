@@ -18,6 +18,7 @@
 		FFAE1BCA27B9217200C7B2FA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BC927B9217200C7B2FA /* BaseViewModel.swift */; };
 		FFAE1BCC27B9230800C7B2FA /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BCB27B9230800C7B2FA /* CurrencyModel.swift */; };
 		FFAE1BCE27B923A700C7B2FA /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BCD27B923A700C7B2FA /* TransactionModel.swift */; };
+		FFAE1BD127B9251200C7B2FA /* SENetworking in Frameworks */ = {isa = PBXBuildFile; productRef = FFAE1BD027B9251200C7B2FA /* SENetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAE1BD127B9251200C7B2FA /* SENetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +175,9 @@
 			dependencies = (
 			);
 			name = "Practice exercise";
+			packageProductDependencies = (
+				FFAE1BD027B9251200C7B2FA /* SENetworking */,
+			);
 			productName = "Practice exercise";
 			productReference = FFAE1B9327B9202900C7B2FA /* Practice exercise.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +250,9 @@
 				Base,
 			);
 			mainGroup = FFAE1B8A27B9202900C7B2FA;
+			packageReferences = (
+				FFAE1BCF27B9251200C7B2FA /* XCRemoteSwiftPackageReference "SENetworking" */,
+			);
 			productRefGroup = FFAE1B9427B9202900C7B2FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -652,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFAE1BCF27B9251200C7B2FA /* XCRemoteSwiftPackageReference "SENetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kudoleh/SENetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFAE1BD027B9251200C7B2FA /* SENetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFAE1BCF27B9251200C7B2FA /* XCRemoteSwiftPackageReference "SENetworking" */;
+			productName = SENetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFAE1B8B27B9202900C7B2FA /* Project object */;
 }
