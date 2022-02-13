@@ -7,8 +7,17 @@
 
 import Foundation
 
-struct TransactionModel: Decodable {
-    var sku: String
-    var amount: Float
-    var currency: String
+
+struct TransactionRequest: Encodable {
+}
+
+struct TransactionResponse: Decodable {
+    private enum CodingKeys: String, CodingKey {
+        case sku = "sku"
+        case amount = "amount"
+        case currency = "currency"
+    }
+    let sku: String
+    let amount: Float
+    let currency: String
 }
