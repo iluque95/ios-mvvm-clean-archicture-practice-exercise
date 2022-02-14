@@ -24,6 +24,8 @@
 		FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */; };
 		FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */; };
 		FFCCA75C27BA9665006AD0B4 /* ItemSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */; };
+		FFCCA75E27BA9C60006AD0B4 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA75D27BA9C60006AD0B4 /* Summary.storyboard */; };
+		FFCCA76027BA9C7E006AD0B4 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75F27BA9C7E006AD0B4 /* SummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversor.swift; sourceTree = "<group>"; };
 		FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
 		FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSummaryModel.swift; sourceTree = "<group>"; };
+		FFCCA75D27BA9C60006AD0B4 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
+		FFCCA75F27BA9C7E006AD0B4 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			children = (
 				FFAE1B9A27B9202900C7B2FA /* ViewController.swift */,
 				FFAE1B9C27B9202900C7B2FA /* Main.storyboard */,
+				FFCCA75D27BA9C60006AD0B4 /* Summary.storyboard */,
+				FFCCA75F27BA9C7E006AD0B4 /* SummaryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				FFAE1BA327B9202E00C7B2FA /* LaunchScreen.storyboard in Resources */,
 				FFAE1BA027B9202E00C7B2FA /* Assets.xcassets in Resources */,
 				FFAE1B9E27B9202900C7B2FA /* Main.storyboard in Resources */,
+				FFCCA75E27BA9C60006AD0B4 /* Summary.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +330,7 @@
 				FFAE1BD527B9342000C7B2FA /* SceneDelegate.swift in Sources */,
 				FFAE1B9B27B9202900C7B2FA /* ViewController.swift in Sources */,
 				FFAE1B9727B9202900C7B2FA /* AppDelegate.swift in Sources */,
+				FFCCA76027BA9C7E006AD0B4 /* SummaryViewController.swift in Sources */,
 				FFAE1BCC27B9230800C7B2FA /* RateModel.swift in Sources */,
 				FFAE1BD327B925EA00C7B2FA /* TransactionsViewModel.swift in Sources */,
 				FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */,

@@ -46,6 +46,11 @@ extension ViewController: MainViewControllerOutput {
     }
     
     func requestedData(summary: ItemSummaryModel) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Summary", bundle: nil)
+        let summaryViewController = storyBoard.instantiateViewController(withIdentifier: "SummaryViewControllerID") as! SummaryViewController
+        summaryViewController.product = product
+        summaryViewController.summary = summary
+        self.present(summaryViewController, animated: true, completion: nil)
     }
 }
 
