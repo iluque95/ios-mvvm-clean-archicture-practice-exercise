@@ -23,6 +23,7 @@
 		FFAE1BD527B9342000C7B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */; };
 		FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */; };
 		FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */; };
+		FFCCA75C27BA9665006AD0B4 /* ItemSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversor.swift; sourceTree = "<group>"; };
 		FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
+		FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSummaryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				FFAE1BCB27B9230800C7B2FA /* RateModel.swift */,
 				FFAE1BCD27B923A700C7B2FA /* TransactionModel.swift */,
 				FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */,
+				FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */,
 				FFAE1BCA27B9217200C7B2FA /* BaseViewModel.swift in Sources */,
 				FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */,
+				FFCCA75C27BA9665006AD0B4 /* ItemSummaryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
