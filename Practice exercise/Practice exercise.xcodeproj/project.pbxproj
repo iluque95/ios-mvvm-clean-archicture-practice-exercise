@@ -19,7 +19,7 @@
 		FFAE1BCC27B9230800C7B2FA /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BCB27B9230800C7B2FA /* RateModel.swift */; };
 		FFAE1BCE27B923A700C7B2FA /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BCD27B923A700C7B2FA /* TransactionModel.swift */; };
 		FFAE1BD127B9251200C7B2FA /* SENetworking in Frameworks */ = {isa = PBXBuildFile; productRef = FFAE1BD027B9251200C7B2FA /* SENetworking */; };
-		FFAE1BD327B925EA00C7B2FA /* OperationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD227B925EA00C7B2FA /* OperationsViewModel.swift */; };
+		FFAE1BD327B925EA00C7B2FA /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD227B925EA00C7B2FA /* TransactionsViewModel.swift */; };
 		FFAE1BD527B9342000C7B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */; };
 		FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */; };
 		FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */; };
@@ -59,7 +59,7 @@
 		FFAE1BC927B9217200C7B2FA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FFAE1BCB27B9230800C7B2FA /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
 		FFAE1BCD27B923A700C7B2FA /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
-		FFAE1BD227B925EA00C7B2FA /* OperationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsViewModel.swift; sourceTree = "<group>"; };
+		FFAE1BD227B925EA00C7B2FA /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversor.swift; sourceTree = "<group>"; };
 		FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
@@ -120,7 +120,6 @@
 				FFAE1BC727B9214B00C7B2FA /* ViewModel */,
 				FFAE1BC627B9214400C7B2FA /* Model */,
 				FFAE1B9627B9202900C7B2FA /* AppDelegate.swift */,
-				FFAE1B9C27B9202900C7B2FA /* Main.storyboard */,
 				FFAE1B9F27B9202E00C7B2FA /* Assets.xcassets */,
 				FFAE1BA127B9202E00C7B2FA /* LaunchScreen.storyboard */,
 				FFAE1BA427B9202E00C7B2FA /* Info.plist */,
@@ -161,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				FFAE1BC927B9217200C7B2FA /* BaseViewModel.swift */,
-				FFAE1BD227B925EA00C7B2FA /* OperationsViewModel.swift */,
+				FFAE1BD227B925EA00C7B2FA /* TransactionsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				FFAE1B9A27B9202900C7B2FA /* ViewController.swift */,
+				FFAE1B9C27B9202900C7B2FA /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				FFAE1B9B27B9202900C7B2FA /* ViewController.swift in Sources */,
 				FFAE1B9727B9202900C7B2FA /* AppDelegate.swift in Sources */,
 				FFAE1BCC27B9230800C7B2FA /* RateModel.swift in Sources */,
-				FFAE1BD327B925EA00C7B2FA /* OperationsViewModel.swift in Sources */,
+				FFAE1BD327B925EA00C7B2FA /* TransactionsViewModel.swift in Sources */,
 				FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */,
 				FFAE1BCA27B9217200C7B2FA /* BaseViewModel.swift in Sources */,
 				FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */,
