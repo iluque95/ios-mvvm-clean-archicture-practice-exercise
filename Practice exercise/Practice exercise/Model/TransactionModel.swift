@@ -18,6 +18,6 @@ struct TransactionResponse: Decodable {
         case currency = "currency"
     }
     let sku: String
-    let amount: Float
+    let amount: String
     let currency: String
 }
