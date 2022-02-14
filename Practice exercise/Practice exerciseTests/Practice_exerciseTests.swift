@@ -9,25 +9,38 @@ import XCTest
 @testable import Practice_exercise
 
 class Practice_exerciseTests: XCTestCase {
+    
+    let rates: [String: [RateResponse]] = ["EUR": [RateResponse(from: "EUR", to: "USD", rate: "1.359"),
+                                                     RateResponse(from: "EUR", to: "CAD", rate: "1.366")],
+                                           "CAD": [RateResponse(from: "CAD", to: "EUR", rate: "0.732")],
+                                           "USD": [RateResponse(from: "USD", to: "EUR", rate: "0.736")]]
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testCurrencyConversorTest1() throws {
+        let from = CurrencyModel(currency: "EUR", amount: 10)
+        let to = "USD"
+        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        
+        XCTAssertEqual(res.amount, 13.59)
+        XCTAssertEqual(res.currency, to)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testCurrencyConversorTest2() throws {
+        let from = CurrencyModel(currency: "USD", amount: 10)
+        let to = "CAD"
+        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        
+        XCTAssertEqual(res.amount, 10.05)
+        XCTAssertEqual(res.currency, to)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testCurrencyConversorTest3() throws {
+        let from = CurrencyModel(currency: "CAD", amount: 10.05)
+        let to = "USD"
+        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        
+        XCTAssertEqual(res.amount, 10.00)
+        XCTAssertEqual(res.currency, to)
     }
 
 }
