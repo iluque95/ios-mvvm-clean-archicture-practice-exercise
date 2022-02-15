@@ -7,9 +7,6 @@
 
 import Foundation
 
-struct RateRequest: Encodable {
-}
-
 struct RateResponse: Decodable {
     init(from: String, to: String, rate: String) {
         self.from = from
@@ -17,9 +14,9 @@ struct RateResponse: Decodable {
         self.rate = rate
     }
     private enum CodingKeys: String, CodingKey {
-        case from = "from"
-        case to = "to"
-        case rate = "rate"
+        case from
+        case to
+        case rate
     }
     let from: String
     let to: String
