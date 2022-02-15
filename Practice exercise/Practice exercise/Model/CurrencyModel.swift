@@ -8,8 +8,8 @@
 import Foundation
 
 class CurrencyModel {
-    var currency: String
-    var amount: Float
+    let currency: String
+    let amount: Float
     
     init(currency: String, amount: Float) {
         self.currency = currency

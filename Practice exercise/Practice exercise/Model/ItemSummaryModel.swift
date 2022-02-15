@@ -14,8 +14,8 @@ struct FromToCurrenciesPair {
 
 class ItemSummaryModel {
 
-    var transactions: [FromToCurrenciesPair]
-    var amount: Float = 0.0
+    let transactions: [FromToCurrenciesPair]
+    let amount: Float
     
     init(transactions: [FromToCurrenciesPair], amount: Float) {
         self.transactions = transactions
