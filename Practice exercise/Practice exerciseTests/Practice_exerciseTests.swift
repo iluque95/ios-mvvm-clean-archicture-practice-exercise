@@ -19,7 +19,7 @@ class Practice_exerciseTests: XCTestCase {
     func testCurrencyConversorTest1() throws {
         let from = CurrencyModel(currency: "EUR", amount: 10)
         let to = "USD"
-        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        let res = from.convert(to: to, rates: rates)
         
         XCTAssertEqual(res.amount, 13.59)
         XCTAssertEqual(res.currency, to)
@@ -28,7 +28,7 @@ class Practice_exerciseTests: XCTestCase {
     func testCurrencyConversorTest2() throws {
         let from = CurrencyModel(currency: "USD", amount: 10)
         let to = "CAD"
-        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        let res = from.convert(to: to, rates: rates)
         
         XCTAssertEqual(res.amount, 10.05)
         XCTAssertEqual(res.currency, to)
@@ -37,7 +37,7 @@ class Practice_exerciseTests: XCTestCase {
     func testCurrencyConversorTest3() throws {
         let from = CurrencyModel(currency: "CAD", amount: 10.05)
         let to = "USD"
-        let res = CurrencyConversor.convert(from: from, to: to, rates: rates)
+        let res = from.convert(to: to, rates: rates)
         
         XCTAssertEqual(res.amount, 10.00)
         XCTAssertEqual(res.currency, to)

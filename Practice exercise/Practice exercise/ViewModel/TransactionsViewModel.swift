@@ -47,12 +47,12 @@ extension TransactionsViewModel: MainViewControllerInput {
             var currencyPairsTransactions: [FromToCurrenciesPair] = []
             for transaction in skuTransactions {
                 let from = CurrencyModel(currency: transaction.currency, amount: Float(transaction.amount) ?? 0.0)
-                let converted = CurrencyConversor.convert(from: from, to: "EUR", rates: rates)
+                let converted = from.convert(to: "EUR", rates: rates)
                 let to = CurrencyModel(currency: "EUR", amount: converted.amount)
                 
                 currencyPairsTransactions.append(FromToCurrenciesPair(from: from, to: to))
                 
-                amount = CurrencyConversor.sum(a: amount, b: converted.amount)
+                amount.roundedSum(with: converted.amount)
             }
             let summary = ItemSummaryModel(transactions: currencyPairsTransactions, amount: amount)
             delegate?.requestedData(summary: summary)
