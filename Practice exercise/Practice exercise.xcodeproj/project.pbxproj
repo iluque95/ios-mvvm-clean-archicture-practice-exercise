@@ -22,7 +22,7 @@
 		FFAE1BD327B925EA00C7B2FA /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD227B925EA00C7B2FA /* TransactionsViewModel.swift */; };
 		FFAE1BD527B9342000C7B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */; };
 		FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */; };
-		FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */; };
+		FFCCA75A27BA6954006AD0B4 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75927BA6954006AD0B4 /* CurrencyModel.swift */; };
 		FFCCA75C27BA9665006AD0B4 /* ItemSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */; };
 		FFCCA75E27BA9C60006AD0B4 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA75D27BA9C60006AD0B4 /* Summary.storyboard */; };
 		FFCCA76027BA9C7E006AD0B4 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA75F27BA9C7E006AD0B4 /* SummaryViewController.swift */; };
@@ -64,7 +64,7 @@
 		FFAE1BD227B925EA00C7B2FA /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		FFAE1BD427B9342000C7B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFCCA75727BA6772006AD0B4 /* CurrencyConversor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversor.swift; sourceTree = "<group>"; };
-		FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
+		FFCCA75927BA6954006AD0B4 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSummaryModel.swift; sourceTree = "<group>"; };
 		FFCCA75D27BA9C60006AD0B4 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FFCCA75F27BA9C7E006AD0B4 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			children = (
 				FFAE1BCB27B9230800C7B2FA /* RateModel.swift */,
 				FFAE1BCD27B923A700C7B2FA /* TransactionModel.swift */,
-				FFCCA75927BA6954006AD0B4 /* CurrencyConversionModel.swift */,
+				FFCCA75927BA6954006AD0B4 /* CurrencyModel.swift */,
 				FFCCA75B27BA9665006AD0B4 /* ItemSummaryModel.swift */,
 			);
 			path = Model;
@@ -335,7 +335,7 @@
 				FFAE1BD327B925EA00C7B2FA /* TransactionsViewModel.swift in Sources */,
 				FFCCA75827BA6772006AD0B4 /* CurrencyConversor.swift in Sources */,
 				FFAE1BCA27B9217200C7B2FA /* BaseViewModel.swift in Sources */,
-				FFCCA75A27BA6954006AD0B4 /* CurrencyConversionModel.swift in Sources */,
+				FFCCA75A27BA6954006AD0B4 /* CurrencyModel.swift in Sources */,
 				FFCCA75C27BA9665006AD0B4 /* ItemSummaryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
