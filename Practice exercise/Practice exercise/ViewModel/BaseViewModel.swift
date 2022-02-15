@@ -25,6 +25,8 @@ class BaseViewModel: BaseViewModelProtocol, BaseViewModelApiConfigurationProtoco
         return DefaultDataTransferService(with: apiDataNetwork)
     }()
     
+    lazy var apiRepository = APIRepository.shared
+    
     func baseURL() -> String {
         return ""
     }

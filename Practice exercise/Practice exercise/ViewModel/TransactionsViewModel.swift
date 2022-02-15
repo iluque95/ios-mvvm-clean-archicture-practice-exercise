@@ -22,7 +22,7 @@ class TransactionsViewModel: BaseViewModel {
     }
     
     func fetchRates(completion: @escaping ([RateResponse]?)->Void) {
-        let endpoint = APIEndpoints.getRates(with: nil)
+        let endpoint = apiRepository.getRates()
         dataTransferService().request(with: endpoint) { result in
             guard case let .success(response) = result, let res = response else { return }
             completion(res)
@@ -30,7 +30,7 @@ class TransactionsViewModel: BaseViewModel {
     }
     
     func fetchTransactions(completion: @escaping ([TransactionResponse]?)->Void) {
-        let endpoint = APIEndpoints.getTransanctions(with: nil)
+        let endpoint = apiRepository.getTransanctions()
         apiDataTransferService.request(with: endpoint) { result in
             guard case let .success(response) = result, let res = response else { return }
             completion(res)
@@ -82,25 +82,5 @@ extension TransactionsViewModel: MainViewControllerInput {
                 }
             }
         }
-    }
-}
-
-// MARK: APIEndpoints
-fileprivate class APIEndpoints {
-    
-    static func getRates(with rateRequest: RateRequest?) -> Endpoint<[RateResponse]?> {
-            return Endpoint(path: "rates",
-                            method: .get,
-                            headerParamaters: ["Content-Type": "application/json",
-                                               "Accept": "application/json"],
-                            queryParametersEncodable: rateRequest)
-    }
-    
-    static func getTransanctions(with transactionRequest: TransactionRequest?) -> Endpoint<[TransactionResponse]?> {
-            return Endpoint(path: "transactions",
-                            method: .get,
-                            headerParamaters: ["Content-Type": "application/json",
-                                               "Accept": "application/json"],
-                            queryParametersEncodable: transactionRequest)
     }
 }
